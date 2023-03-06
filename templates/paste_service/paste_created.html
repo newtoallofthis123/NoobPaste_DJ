@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <h1>Paste Created</h1>
+    <div class="paste_div">
+        <h2>{{ paste.title }}</h2>
+        <div id="canvas">
+            <textarea name="content" id="content" cols="30" rows="10" spellcheck="true" placeholder="Start Typing..."
+                autofocus="true">{{ paste.content }}</textarea>
+        </div>
+        <p>{{ slug }}</p>
+    </div>
+{% endblock %}
